@@ -1,0 +1,28 @@
+{
+    "campaign": "robokar-poli",
+    "title": "Робокар Поли - впервые в Воронеже!",
+    "subtitle": "Впервые в России! Впервые в Воронеже! Новый интерактивный музыкальный спектакль для детей «Робокар Поли».",
+    "header":
+    [
+        "Вниманию детей и их родителей!!!<br>Впервые в России! Впервые в Воронеже!",
+        "Новый интерактивный музыкальный спектакль для детей.<br>По мотивам самого популярного и любимого детьми всего мира мультфильма «<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=935&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=robokar-poli&amp;utm_content=robokar-poli_text\" target=\"_blank\">Робокар Поли</a></strong>»!",
+        "Подарите своему ребёнку праздник!"
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "top",
+            "events" :
+            [
+                {
+                    "content": "robokar-poli",
+                    "event_id": 935,
+                    "img": "2016-01-21_robokar-poli.jpg",
+                    "alt": "2016-03-20 «Робокар Поли» Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer": []
+}

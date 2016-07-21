@@ -1,0 +1,56 @@
+{
+    "campaign": "afisha-2016-10",
+    "title": "Афиша Воронеж. Открыты продажи на осень 2016 г.",
+    "subtitle": "Не пропустите лучшие концерты и спектакли грядущего сезона, которые предлагает Вашему вниманию Афиша Воронежа bezantrakta.ru",
+    "header":
+    [
+        "Не пропусти!<br>Уже в продаже лучшие билеты нового концертного сезона!"
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "nargiz",
+                    "event_id": 1206,
+                    "img": "2016-10-28_nargiz.jpg",
+                    "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "shtraus-orkestr",
+                    "event_id": 1200,
+                    "img": "2016-11-02_shtraus-orkestr.jpg",
+                    "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
+                    "button": "buy"
+                }
+            ]
+        },
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "staraya-deva",
+                    "event_id": 1168,
+                    "img": "2016-11-28_staraya-deva.jpg",
+                    "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "devyatova",
+                    "event_id": 1201,
+                    "img": "2016-12-03_devyatova.jpg",
+                    "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer":
+    [
+        "С полной информацией о всех мероприятиях Вы можете ознакомиться на нашем сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha-may2016&amp;utm_content=afisha-may2016_text\" target=\"_blank\">bezantrakta.ru</a></strong>."
+    ]
+}

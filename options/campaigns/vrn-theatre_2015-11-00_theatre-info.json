@@ -1,0 +1,39 @@
+{
+    "campaign": "toib-tdik-info",
+    "title": "Театр Оперы и Балета - почтовая рассылка",
+    "subtitle": "Предлагаем вашему вниманию билеты на спектакли Театра Оперы и Балета (Воронеж)",
+    "header":
+    [
+        "Добрый день!",
+        "Вы получили это сообщение, поскольку ранее заказывали билеты на нашем сайте.",
+        "На нашем сайте Вы можете купить билеты в <a href=\"http://theatre.bezantrakta.ru/?utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=toib-tdik-info&amp;utm_content=text-toib\" target=\"_blank\" style=\"display: inline-block;\">Театр оперы и балета</a> и <a href=\"http://bezantrakta.ru/?venue=39&amp;utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=toib-tdik-info&amp;utm_content=text-tdik\" target=\"_blank\" style=\"display: inline-block;\">Театр драмы им. Кольцова</a>.",
+        "Заказ и бронирование онлайн - на сайте <a href=\"http://theatre.bezantrakta.ru/?utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=toib-tdik-info&amp;utm_content=text-bezantrakta\" target=\"_blank\" style=\"display: inline-block;\">bezantrakta.ru</a> или по телефону <a href=\"tel:7-473-2-100-102\" target=\"_blank\" style=\"display: inline-block;\">(473) 210-01-02</a>."
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "",
+            "events":
+            [
+                {
+                    "content": "toib-logo",
+                    "event_id": "http://theatre.bezantrakta.ru",
+                    "img": "toib.jpg",
+                    "alt": "Театр оперы и балета",
+                    "button": ""
+                },
+                {
+                    "content": "tdik-logo",
+                    "event_id": "http://theatre.bezantrakta.ru",
+                    "img": "tdik.jpg",
+                    "alt": "Театр драмы им. Кольцова",
+                    "button": ""
+                }
+            ]
+        }
+    ],
+    "footer": [
+        "Приобретая билеты, Вы соглашаетесь с условиями <a href=\"http://theatre.bezantrakta.ru/oferta?utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=toib-tdik-info&amp;utm_content=oferta\" target=\"_blank\"><span>публичной оферты</span></a>.",
+        "Мы надеемся, что вам будет интересно получать почтовую рассылку о новых воронежских мероприятиях. Если рассылка вас заинтересовала - добавьте наш электронный адрес в свою адресную книгу. Если рассылка покажется вам неинтересной - вы всегда можете отписаться от неё по ссылке в конце этого письма."
+    ]
+}

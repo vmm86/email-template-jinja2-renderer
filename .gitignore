@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+*.sublime-*
+
+campaigns/*
+images*/
+imports/*
+test-screenshots/*

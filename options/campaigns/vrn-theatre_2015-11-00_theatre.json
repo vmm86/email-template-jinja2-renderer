@@ -1,0 +1,46 @@
+{
+    "campaign": "rep-nov2015",
+    "title": "Театр Оперы и Балета - почтовая рассылка",
+    "subtitle": "Предлагаем вашему вниманию билеты на спектакли Театра Оперы и Балета (Воронеж)",
+    "header":
+    [
+        "Добрый день!",
+        "Вы получили это сообщение, поскольку ранее заказывали билеты на нашем сайте.",
+        "Купить, забронировать, оплатить билеты онлайн Вы сможете в наших кассах, <a href=\"http://theatre.bezantrakta.ru/?utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=rep-nov2015&amp;utm_content=text-bezantrakta\" target=\"_blank\" style=\"display: inline-block;\">на сайте theatre.bezantrakta.ru</a> или по телефону <a href=\"tel:74732-100-102\" target=\"_blank\" style=\"display: inline-block;\">(473) 2-100-102</a>.",
+        "Будьте в курсе актуальных спектаклей Театра Оперы и Балета!",
+        "<span class=\"header\">РЕПЕРТУАР НА НОЯБРЬ</span>"
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "",
+            "events":
+            [
+                {
+                    "content": "rep-nov2015-1",
+                    "event_id": "http://theatre.bezantrakta.ru",
+                    "img": "11.jpg",
+                    "alt": "Репертуар на ноябрь 2015",
+                    "button": ""
+                }
+            ]
+        },
+        {
+            "buttons": "",
+            "events":
+            [
+                {
+                    "content": "m-i-m",
+                    "event_id": "http://theatre.bezantrakta.ru",
+                    "img": "12.jpg",
+                    "alt": "Репертуар на ноябрь 2015",
+                    "button": ""
+                }
+            ]
+        }
+    ],
+    "footer": [
+        "Приобретая билеты, Вы соглашаетесь с условиями <a href=\"http://theatre.bezantrakta.ru/oferta?utm_source=theatre&amp;utm_medium=email&amp;utm_campaign=rep-nov2015&amp;utm_content=oferta\" target=\"_blank\"><span>публичной оферты</span></a>.",
+        "Мы надеемся, что вам будет интересно получать почтовую рассылку о новых воронежских мероприятиях. Если рассылка вас заинтересовала - добавьте наш электронный адрес в свою адресную книгу. Если рассылка покажется вам неинтересной - вы всегда можете отписаться от неё по ссылке в конце этого письма."
+    ]
+}

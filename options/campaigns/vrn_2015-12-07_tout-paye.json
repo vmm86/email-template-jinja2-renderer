@@ -1,0 +1,31 @@
+{
+    "campaign": "tout-paye",
+    "title": "Новогоднее предложение - Всё оплачено... (10-11 декабря 2015 года, 19:00, Театр оперы и балета)",
+    "subtitle": "Распечатай полученное письмо, предъяви его в кассе, купи один билет и получи приглашение на второе лицо в подарок!",
+    "header":
+    [
+        "Спасибо Вам, что Вы пользуетесь услугами нашего сайта.",
+        "<strong>ТОЛЬКО ДЛЯ ВАС!</strong><br><span class=\"header\" style=\"margin: 0;\">СЕКРЕТНАЯ НОВОГОДНЯЯ АКЦИЯ!</span>",
+        "<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=637&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=tout-paye&amp;utm_content=tout-paye_text\" target=\"_blank\">Всё оплачено...</a> <br> 10-11 декабря 2015 года, 19:00, Театр оперы и балета</strong>"
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "",
+            "events" :
+            [
+                {
+                    "content": "tout-paye",
+                    "event_id": 637,
+                    "img": "tout-paye_big_poster.jpg",
+                    "alt": "2015-12-11 Всё оплачено... Театр Оперы и Балета",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer": [
+        "<span class=\"header\">УСЛОВИЯ ПРОВЕДЕНИЯ АКЦИИ:</span>",
+        "<ol class=\"small-text\"><li>Акция действует в кассах <a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=tout-paye&amp;utm_content=bezantrakta_text\" target=\"_blank\">bezantrakta.ru</a> до 17 часов 30 минут 8 декабря 2015 года. <span style=\"display: inline-block;\">Телефон для справок: <a href=\"tel:74732100102\" target=\"_blank\">+7 (473) 210-01-02</a></span>.</li><li>Распечатай полученное письмо, предъяви его в кассе, купи один билет <span style=\"display: inline-block;\">и получи приглашение на второе лицо в подарок</span>.</li><li>Количество приглашений в подарок равно количеству купленных билетов.</li><li>Один адресат может воспользоваться условиями акции только один раз.</li><li>Ждём Вас!</li></ol>"
+    ]
+}

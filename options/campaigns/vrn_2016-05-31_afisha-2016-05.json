@@ -1,0 +1,94 @@
+{
+    "campaign": "afisha-may2016",
+    "title": "АНОНС - НОВЫЕ СОБЫТИЯ АФИША ВОРОНЕЖ!",
+    "subtitle": "Предлагаем вашему вниманию новые концерты и спектакли грядущего сезона, а билеты вы можете приобрести на сайте bezantrakta.ru",
+    "header": [],
+    "events_list": 
+    [
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "usadba-jazz",
+                    "event_id": 1180,
+                    "img": 406,
+                    "alt": "2016-07-16 Усадьба Jazz Дворец Ольденбургских",
+                    "button": "buy"
+                },
+                {
+                    "content": "yolka",
+                    "event_id": 1237,
+                    "img": 739,
+                    "alt": "2016-11-16 ЁЛКА Концертный зал Event-Hall",
+                    "button": "buy"
+                },
+                {
+                    "content": "winx",
+                    "event_id": 1235,
+                    "img": 738,
+                    "alt": "2016-10-05 ФЕЕРИЯ ФЕЙ Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        },
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "jcs",
+                    "event_id": 1238,
+                    "img": 740,
+                    "alt": "2016-10-12 «Иисус Христос-суперзвезда!» Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "nargiz",
+                    "event_id": 1206,
+                    "img": 735,
+                    "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "shtraus-orkestr",
+                    "event_id": 1200,
+                    "img": 729,
+                    "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
+                    "button": "buy"
+                }
+            ]
+        },
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "staraya-deva",
+                    "event_id": 1168,
+                    "img": 721,
+                    "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "gala-balet",
+                    "event_id": 1241,
+                    "img": 742,
+                    "alt": "2016-11-30 Гала-Балет Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "devyatova",
+                    "event_id": 1201,
+                    "img": 730,
+                    "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer":
+    [
+        "С полной информацией о всех мероприятиях Вы можете ознакомиться на нашем сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha-may2016&amp;utm_content=afisha-may2016_text\" target=\"_blank\">bezantrakta.ru</a></strong>. Информация постоянно обновляется."
+    ]
+}

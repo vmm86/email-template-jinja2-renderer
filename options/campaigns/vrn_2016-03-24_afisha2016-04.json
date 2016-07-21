@@ -1,0 +1,40 @@
+{
+    "campaign": "afisha-2016-04",
+    "title": "БЛИЖАЙШИЕ КОНЦЕРТЫ АПРЕЛЬ. ЖДЕМ ВАС!",
+    "subtitle": "Не пропустите ближайшие события апреля, которые предлагает Вашему вниманию Афиша Воронежа bezantrakta.ru",
+    "header":
+    [
+        "Купить, забронировать, оплатить билеты онлайн Вы можете в наших кассах:<br>на сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha2016-04&amp;utm_content=afisha2016-04_text\" target=\"_blank\">bezantrakta.ru</a></strong> или по телефону <strong><a href=\"tel:74732100102\" target=\"_blank\" style=\"display: inline-block;\">+7 (473) 210-01-02</a></strong>."
+    ],
+    "events_list": 
+    [
+        {
+            "buttons": "bottom",
+            "events":
+            [
+                {
+                    "content": "noskov",
+                    "event_id": 983,
+                    "img": 638,
+                    "alt": "2016-04-02 Николай Носков. Юбилейный тур 6:0 Театр Оперы и Балета",
+                    "button": "buy"
+                },
+                {
+                    "content": "didyulya",
+                    "event_id": 923,
+                    "img": 617,
+                    "alt": "2016-04-10 ДиДюЛя Воронежский Концертный Зал",
+                    "button": "buy"
+                },
+                {
+                    "content": "lebedinoye-ozero",
+                    "event_id": 1103,
+                    "img": 685,
+                    "alt": "2016-04-17 Классический Русский Балет Москва «Лебединое озеро» Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer": []
+}
