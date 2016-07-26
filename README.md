@@ -33,7 +33,7 @@ They help to clearly identify clicks on each link and further commercial convers
 
 `campaigns` JSON file format:
 
-```json
+```js
 {
     // Campaign's name and `utm_campaign` value
     "campaign": "afisha-2016-10",
@@ -117,7 +117,7 @@ They help to clearly identify clicks on each link and further commercial convers
 
 `sources` JSON file format:
 
-```json
+```js
 {
     // Web site ID that email belongs to and `utm_source` value
     "source": "vrn",
