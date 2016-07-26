@@ -14,7 +14,7 @@ template = jinja2.Template(
 
 # Пути к параметрам рассылок и сайтов, на которые они ведут
 campaigns = os.path.join(os.getcwd(), 'options', 'campaigns')
-source    = os.path.join(os.getcwd(), 'options', 'source')
+sources   = os.path.join(os.getcwd(), 'options', 'sources')
 
 for opt in os.listdir(campaigns):
     if opt.endswith('.json'):
@@ -27,7 +27,7 @@ for opt in os.listdir(campaigns):
         for src in ['vrn', 'vrn-theatre']:
             if opt.split('_')[0] == src:
                 cur_source = json.load(
-                    open(os.path.join(source, src + '.json'), 'r')
+                    open(os.path.join(sources, src + '.json'), 'r')
                 )
 
         # Слияние словарей с параметрами рассылки и её сайта
