@@ -143,6 +143,13 @@ ul.small-text li {
 .button {
     padding: 6px 0;
 }
+.date {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
 </style>
 
 <body bgcolor="ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" offset="0">
@@ -174,6 +181,9 @@ ul.small-text li {
                             <tbody>
                                 <tr>
                                     <td>
+                                    {% if not logo %}
+                                        <p></p>
+                                    {% endif %}
                                     {% for item in header %}
                                         <p>{{ item }}</p>
                                     {% endfor %}
@@ -283,6 +293,9 @@ ul.small-text li {
                                                 width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
                                                 style="width: 100%; height: auto;">
                                         </a>
+                                    {% if event.date %}
+                                        <span class="date">{{ event.date }}</span>
+                                    {% endif %}
                                     </td>
                                 {% if loop.index < events_row.events|length|int %}
                                     <td width="20">&nbsp;</td>
