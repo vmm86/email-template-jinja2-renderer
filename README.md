@@ -73,6 +73,8 @@ They help to clearly identify clicks on each link and further commercial convers
                     "img": "2016-10-28_nargiz.jpg",
                     // `alt` attribute of poster's image
                     "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
+                    // Date of event as str
+                    "date": "28/10",
                     // Type of button
                     // "buy"           - to buy a ticket
                     // "registration"  - to register on some external site
@@ -83,6 +85,7 @@ They help to clearly identify clicks on each link and further commercial convers
                     "event_id": 1200,
                     "img": "2016-11-02_shtraus-orkestr.jpg",
                     "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
+                    "date": "2/11",
                     "button": "buy"
                 }
             ]
@@ -98,7 +101,8 @@ They help to clearly identify clicks on each link and further commercial convers
                     "content": "staraya-deva",
                     "event_id": 1168,
                     "img": "2016-11-28_staraya-deva.jpg",
-                    "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
+                    "alt": "2016-11-28 «Старая дева» Воронежский Концертный Зал",
+                    "date": "28/11",
                     "button": "buy"
                 }
             ]
