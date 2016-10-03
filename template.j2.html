@@ -153,6 +153,7 @@ ul.small-text li {
 
     <table class="main" align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
     <tbody>
+    {% if logo %}
         <tr>
             <td class="logo">
                 <a href="http://{{ source_link }}/?utm_source={{ source}}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ campaign }}_logo" title="{{ source_logo_alt }}" target="_blank">
@@ -160,6 +161,7 @@ ul.small-text li {
                 </a>
             </td>
         </tr>
+    {% endif %}
 
     {% if header %}
         <tr>
