@@ -198,18 +198,24 @@ ul.small-text li {
         </tr>
 
         <tr>
-            <td class="posters posters-{{ events_row.events|length|int }}">
+            <td class="posters posters-{{ events_row.cells_number }}">
                 <table class="table-wrapper" align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
                 <tbody>
                 {% if events_row.buttons == "top" %}
                     <tr>
                         <td class="hspacer" width="20">&nbsp;</td>
                         <td width="560">
-                            <table class="columns-{{ events_row.events|length|int }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table class="columns-{{ events_row.cells_number }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
                                 <tr>
                             {% for event in events_row.events %}
-                                    <td class="button" align="center" width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}">
+                                    <td class="button" align="center"
+                                {% if event.colspan %}
+                                    width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
+                                {% else %}
+                                    width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
+                                {% endif%}
+                                    >
                                         <a
                                     {% if event.event_id is number %}
                                         href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
@@ -220,7 +226,7 @@ ul.small-text li {
                                         target="_blank">
                                             <img
                                         {% if event.button == 'buy' %}
-                                            {% if events_row.events|length|int < 2 %}
+                                            {% if events_row.cells_number < 2 %}
                                                 src="http://{{ source_link }}/emailing/images/buy.png" alt="Купить билет"
                                             {% else %}
                                                 src="http://{{ source_link }}/emailing/images/buy-small.png" alt="Купить"
@@ -228,11 +234,11 @@ ul.small-text li {
                                         {% elif event.button == 'registration' %}
                                                 src="http://{{ source_link }}/emailing/images/registration.png" alt="Регистрация"
                                         {% endif %}
-                                                width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}"
+                                                width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.events|length|int %}
+                                {% if loop.index < events_row.cells_number %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}
@@ -246,11 +252,17 @@ ul.small-text li {
                     <tr>
                         <td class="hspacer" width="20">&nbsp;</td>
                         <td width="560">
-                            <table class="columns-{{ events_row.events|length|int }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table class="columns-{{ events_row.cells_number }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
                                 <tr>
                             {% for event in events_row.events %}
-                                    <td align="center" width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}">
+                                    <td align="center"
+                                {% if event.colspan %}
+                                    width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
+                                {% else %}
+                                    width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
+                                {% endif%}
+                                    >
                                         <a
                                         {% if event.event_id is number %}
                                             href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
@@ -266,11 +278,11 @@ ul.small-text li {
                                                 src="http://{{ source_link }}/emailing/campaigns/{{ event.img }}"
                                             {% endif%}
                                                 alt="{{ event.alt }}"
-                                                width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}"
+                                                width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.events|length|int %}
+                                {% if loop.index < events_row.cells_number %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}
@@ -284,11 +296,17 @@ ul.small-text li {
                     <tr>
                         <td class="hspacer" width="20">&nbsp;</td>
                         <td width="560">
-                            <table class="columns-{{ events_row.events|length|int }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table class="columns-{{ events_row.cells_number }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
                                 <tr>
                             {% for event in events_row.events %}
-                                    <td class="button" align="center" width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}">
+                                    <td class="button" align="center"
+                                {% if event.colspan %}
+                                    width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
+                                {% else %}
+                                    width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
+                                {% endif%}
+                                    >
                                         <a
                                     {% if event.event_id is number %}
                                         href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
@@ -299,7 +317,7 @@ ul.small-text li {
                                         target="_blank">
                                             <img
                                         {% if event.button == 'buy' %}
-                                            {% if events_row.events|length|int < 2 %}
+                                            {% if events_row.cells_number < 2 %}
                                                 src="http://{{ source_link }}/emailing/images/buy.png" alt="Купить билет"
                                             {% else %}
                                                 src="http://{{ source_link }}/emailing/images/buy-small.png" alt="Купить"
@@ -307,11 +325,11 @@ ul.small-text li {
                                         {% elif event.button == 'registration' %}
                                                 src="http://{{ source_link }}/emailing/images/registration.png" alt="Регистрация"
                                         {% endif %}
-                                                width="{{ ((560-20*(events_row.events|length|int-1))/(events_row.events|length|int))|int }}"
+                                                width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.events|length|int %}
+                                {% if loop.index < events_row.cells_number %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}

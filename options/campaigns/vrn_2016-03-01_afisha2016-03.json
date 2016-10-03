@@ -9,6 +9,7 @@
     "events_list": 
     [
         {
+            "cells_number": 3,
             "buttons": "bottom",
             "events":
             [
@@ -36,6 +37,7 @@
             ]
         },
         {
+            "cells_number": 3,
             "buttons": "bottom",
             "events":
             [

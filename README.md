@@ -53,10 +53,12 @@ They help to clearly identify clicks on each link and further commercial convers
     [
         // Every child dictionary is one row in a table, that holds one or many posters of events
         {
-            // Additional buttons may be renderer above or beyond posters:
+            // Overall number of cells to be rendered within one row
+            "cells_number": 2,
+            // Additional buttons may be rendered above or beyond posters:
             // "top"
             // "bottom"
-            "buttons": "bottom",
+            "buttons": "top",
             // A list of dictionaries with attributes of each event
             "events":
             [
@@ -86,21 +88,17 @@ They help to clearly identify clicks on each link and further commercial convers
             ]
         },
         {
-            "buttons": "bottom",
+            "cells_number": 2,
+            "buttons": "top",
             "events":
             [
                 {
+                    // If cell's width should be multiplied by a given number
+                    "colspan": 2,
                     "content": "staraya-deva",
                     "event_id": 1168,
                     "img": "2016-11-28_staraya-deva.jpg",
                     "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
-                    "button": "buy"
-                },
-                {
-                    "content": "devyatova",
-                    "event_id": 1201,
-                    "img": "2016-12-03_devyatova.jpg",
-                    "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
                     "button": "buy"
                 }
             ]
