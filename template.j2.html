@@ -240,7 +240,7 @@ ul.small-text li {
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.cells_number %}
+                                {% if loop.index < events_row.events|length|int %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}
@@ -284,7 +284,7 @@ ul.small-text li {
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.cells_number %}
+                                {% if loop.index < events_row.events|length|int %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}
@@ -331,7 +331,7 @@ ul.small-text li {
                                                 style="width: 100%; height: auto;">
                                         </a>
                                     </td>
-                                {% if loop.index < events_row.cells_number %}
+                                {% if loop.index < events_row.events|length|int %}
                                     <td width="20">&nbsp;</td>
                                 {% endif %}
                             {% endfor %}
