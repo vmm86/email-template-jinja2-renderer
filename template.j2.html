@@ -160,7 +160,7 @@ ul.small-text li {
 
     <table class="main" align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
     <tbody>
-    {% if logo %}
+    {% if logo == "top" %}
         <tr>
             <td class="logo">
                 <a href="http://{{ source_link }}/?utm_source={{ source}}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ campaign }}_logo" title="{{ source_logo_alt }}" target="_blank">
@@ -366,7 +366,7 @@ ul.small-text li {
         {% endfor %}
     {% endif %}
 
-     {% if footer %}
+    {% if footer %}
         <tr>
             <td>
                 <table class="table-wrapper" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
@@ -393,6 +393,16 @@ ul.small-text li {
 
         <tr>
             <td class="vspacer" height="10"></td>
+        </tr>
+    {% endif %}
+
+    {% if logo == "bottom" %}
+        <tr>
+            <td class="logo">
+                <a href="http://{{ source_link }}/?utm_source={{ source}}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ campaign }}_logo" title="{{ source_logo_alt }}" target="_blank">
+                    <img src="{{ source_logo }}" alt="{{ source_logo_alt }}" width="600" style="width: 100%; height: auto;">
+                </a>
+            </td>
         </tr>
     {% endif %}
 
@@ -427,25 +437,25 @@ ul.small-text li {
                                         <tbody>
                                             <tr>
                                                 <td width="48">
-                                                    <a href="http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=31&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=vkontakte" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/vkontakte.jpg" alt="ВКонтакте"  style="width: 48px; height: 48px;">
+                                                    <a href="{% if social.vkontakte %}{{ social.vkontakte }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=vkontakte{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=31&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=vkontakte{% endif %}" target="_blank">
+                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/vkontakte.jpg" alt="ВКонтакте" style="width: 48px; height: 48px;">
                                                     </a>
                                                 </td>
                                                 <td class="hspacer" width="20">&nbsp;</td>
                                                 <td width="48">
-                                                    <a href="http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=30&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=facebook" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/facebook.jpg" alt="Facebook"  style="width: 48px; height: 48px;">
+                                                    <a href="{% if social.facebook %}{{ social.facebook }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=facebook{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=30&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=facebook{% endif %}" target="_blank">
+                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/facebook.jpg" alt="Facebook" style="width: 48px; height: 48px;">
                                                     </a>
                                                 </td>
                                                 <td class="hspacer" width="20">&nbsp;</td>
                                                 <td width="48">
-                                                    <a href="http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=32&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=twitter" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/twitter.jpg" alt="Твиттер"  style="width: 48px; height: 48px;">
+                                                    <a href="{% if social.twitter %}{{ social.twitter }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=twitter{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=32&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=twitter{% endif %}" target="_blank">
+                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/twitter.jpg" alt="Твиттер" style="width: 48px; height: 48px;">
                                                     </a>
                                                 </td>
                                                 <td class="hspacer" width="20">&nbsp;</td>
                                                 <td width="48">
-                                                    <a href="http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=34&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=instagram" target="_blank">
+                                                    <a href="{% if social.instagram %}{{ social.instagram }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=instagram{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=34&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=instagram{% endif %}" target="_blank">
                                                         <img width="48" height="48" src="http://{{ source_link }}/emailing/images/instagram.jpg" alt="Инстаграм" style="width: 48px; height: 48px;">
                                                     </a>
                                                 </td>
