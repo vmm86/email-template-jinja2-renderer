@@ -2,7 +2,7 @@
     "campaign": "afisha-2016-12",
     "title": "В новом концертном сезоне",
     "subtitle": "Не пропусти!",
-    "logo": false,
+    "logo": "top",
     "header":
     [
         "Самые интересные мероприятия.",
@@ -127,5 +127,6 @@
             "buttons": "bottom"
         }
     ],
-    "footer": []
+    "footer": [],
+    "social": {}
 }

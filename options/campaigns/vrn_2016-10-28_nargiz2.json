@@ -1,0 +1,34 @@
+{
+    "campaign": "2016-10-28_nargiz2",
+    "title": "Наргиз Закирова «Танцы на битых стеклах»",
+    "subtitle": "Уже завтра!",
+    "logo": "bottom",
+    "header":
+    [
+        "Напоминаем, что уже завтра 28 октября в 19:00 на сцене Воронежского концертного зала неподражаемая <a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=1206&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=2016-10-28_nargiz2&amp;utm_content=2016-10-28_nargiz_text\" target=\"_blank\">Наргиз Закирова</a> выступит с программой «Танцы на битых стеклах»!",
+        "Яркая и неординарная певица с сильным красивым голосом. Все в этой исполнительнице говорит о ее свободе и раскрепощенности, что так важно для настоящего артиста.",
+        "Возрастное ограничение 12+"
+    ],
+    "events_list": 
+    [
+        {
+            "cells_number": 1,
+            "buttons": "top",
+            "events" :
+            [
+                {
+                    "content": "2016-10-28_nargiz2",
+                    "event_id": 1206,
+                    "img": "2016-10-28_nargiz.jpg",
+                    "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
+                    "button": "buy"
+                }
+            ]
+        }
+    ],
+    "footer": [],
+    "social":
+    {
+        "vkontakte": "https://vk.com/event127410472"
+    }
+}

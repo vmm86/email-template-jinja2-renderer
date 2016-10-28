@@ -2,7 +2,7 @@
     "campaign": "2016-10-12_superstar",
     "title": "Рок-опера «Иисус Христос-суперзвезда»",
     "subtitle": "Не пропусти!",
-    "logo": true,
+    "logo": "top",
     "header":
     [
         "12 октября, Воронежский концертный зал.",
@@ -36,5 +36,6 @@
             "buttons": "bottom"
         }
     ],
-    "footer": []
+    "footer": [],
+    "social": {}
 }

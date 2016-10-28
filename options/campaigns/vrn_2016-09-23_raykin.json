@@ -2,7 +2,7 @@
     "campaign": "raykin",
     "title": "Константин Райкин в Воронеже!",
     "subtitle": "Билеты в продаже!",
-    "logo": true,
+    "logo": "top",
     "header":
     [
         "23 сентября в Воронежском концертном зале выступит Константин Райкин <span style=\"display: inline-block;\">с моноспектаклем «Самое любимое»<span>.",
@@ -29,5 +29,6 @@
             "buttons": "bottom"
         }
     ],
-    "footer": []
+    "footer": [],
+    "social": {}
 }

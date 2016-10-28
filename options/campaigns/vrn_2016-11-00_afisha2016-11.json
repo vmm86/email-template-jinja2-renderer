@@ -1,0 +1,86 @@
+{
+    "campaign": "afisha-2016-11",
+    "title": "Лучшие события ноября!",
+    "subtitle": "Билеты в продаже!",
+    "logo": "top",
+    "header":
+    [
+        "${name}, будем рады Вас видеть на наших мероприятиях в ноябре!"
+    ],
+    "events_list": 
+    [
+        {
+            "cells_number": 2,
+            "events":
+            [
+                {
+                    "content": "yolka",
+                    "event_id": 1237,
+                    "img": 739,
+                    "alt": "2016-11-16 Ёлка Концертный зал Event-Hall",
+                    "date": "16/11",
+                    "button": "buy"
+                },
+                {
+                    "content": "nargiz",
+                    "event_id": 1206,
+                    "img": 735,
+                    "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
+                    "date": "28/10",
+                    "button": "buy"
+                }
+            ],
+            "buttons": "bottom"
+        },
+        {
+            "cells_number": 3,
+            "events":
+            [
+                {
+                    "content": "staraya-deva",
+                    "event_id": 1168,
+                    "img": 721,
+                    "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
+                    "date": "26/11",
+                    "button": "buy"
+                },
+                {
+                    "content": "little-pony",
+                    "event_id": 1269,
+                    "img": 762,
+                    "alt": "2016-11-13 Музыкальный спектакль «Литтл Пони» Воронежский Концертный Зал",
+                    "date": "13/11",
+                    "button": "buy"
+                }
+
+            ],
+            "buttons": "bottom"
+        },
+        {
+            "cells_number": 3,
+            "events":
+            [
+
+                {
+                    "content": "lebedinoye-ozero",
+                    "event_id": 1241,
+                    "img": 685,
+                    "alt": "2016-11-30 Классический Русский Балет Москва «Лебединое озеро» Воронежский Концертный Зал",
+                    "date": "30/11",
+                    "button": "buy"
+                },
+                {
+                    "content": "devyatova",
+                    "event_id": 1201,
+                    "img": 730,
+                    "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
+                    "date": "3/12",
+                    "button": "buy"
+                }
+            ],
+            "buttons": "bottom"
+        }
+    ],
+    "footer": [],
+    "social": {}
+}

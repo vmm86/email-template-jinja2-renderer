@@ -2,7 +2,7 @@
     "campaign": "2016-10-28_nargiz",
     "title": "Наргиз Закирова «Танцы на битых стеклах»",
     "subtitle": "Билеты в продаже!",
-    "logo": true,
+    "logo": "bottom",
     "header":
     [
         "28 октября, Воронежский концертный зал.",
@@ -33,5 +33,9 @@
             ]
         }
     ],
-    "footer": []
+    "footer": [],
+    "social":
+    {
+        "vkontakte": "https://vk.com/event127410472"
+    }
 }

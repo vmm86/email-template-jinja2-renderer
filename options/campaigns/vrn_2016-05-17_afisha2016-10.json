@@ -2,7 +2,7 @@
     "campaign": "afisha-2016-10",
     "title": "Афиша Воронеж. Открыты продажи на осень 2016 г.",
     "subtitle": "Не пропустите лучшие концерты и спектакли грядущего сезона, которые предлагает Вашему вниманию Афиша Воронежа bezantrakta.ru",
-    "logo": true,
+    "logo": "top",
     "header":
     [
         "Не пропусти!<br>Уже в продаже лучшие билеты нового концертного сезона!"
@@ -55,5 +55,6 @@
     "footer":
     [
         "С полной информацией о всех мероприятиях Вы можете ознакомиться на нашем сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha-may2016&amp;utm_content=afisha-may2016_text\" target=\"_blank\">bezantrakta.ru</a></strong>."
-    ]
+    ],
+    "social": {}
 }

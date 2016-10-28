@@ -2,7 +2,7 @@
     "campaign": "winx",
     "title": "Музыкальное шоу WINX \"Феерия Фей\" (6+)",
     "subtitle": "Совсем скоро!",
-    "logo": true,
+    "logo": "top",
     "header":
     [
         "5 октября, Воронежский концертный зал",
@@ -33,5 +33,6 @@
             "buttons": "bottom"
         }
     ],
-    "footer": []
+    "footer": [],
+    "social": {}
 }

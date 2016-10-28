@@ -2,7 +2,7 @@
     "campaign": "sotkilava",
     "title": "Зураб Соткилава с сольным концертом в Воронеже!",
     "subtitle": "Приобретайте билеты на сольный концерт Зураба Соткилавы в Воронеже на сайте theatre.bezantrakta.ru",
-    "logo": true,
+    "logo": "top",
     "header":
     [
         "<strong>18 марта 2016 года на сцене Театра оперы и балета состоится <a href=\"http://theatre.bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=419&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=sotkilava&amp;utm_content=sotkilava_text\" target=\"_blank\" style=\"display: inline-block;\">большой сольный концерт народного артиста СССР Зураба Соткилавы</a></strong>.",
@@ -29,5 +29,6 @@
     ],
     "footer": [
         "Ждём Вас!"
-    ]
+    ],
+    "social": {}
 }
