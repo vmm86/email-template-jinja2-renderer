@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "mann",
                     "event_id": "http://mann1-vrn.ru",
                     "img": "2016-05-21_mann.jpg",
                     "alt": "2016-05-21 Игорь Манн Быстрый маркетинг за 3 недели",
-                    "button": "registration"
+                    "button":
+                    {
+                        "type": "registration",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

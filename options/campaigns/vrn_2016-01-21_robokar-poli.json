@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "robokar-poli",
                     "event_id": 935,
                     "img": "2016-01-21_robokar-poli.jpg",
                     "alt": "2016-03-20 «Робокар Поли» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

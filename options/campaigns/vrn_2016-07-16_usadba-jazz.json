@@ -14,15 +14,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "usadba-jazz",
                     "event_id": 1180,
                     "img": "2016-07-16_usadba-jazz.jpg",
                     "alt": "2016-07-16 Усадьба Jazz Дворец Ольденбургских",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

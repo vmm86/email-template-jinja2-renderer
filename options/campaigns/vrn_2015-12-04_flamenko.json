@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "flamenko",
                     "event_id": 751,
                     "img": "flamenko_big_poster.jpg",
                     "alt": "2015-12-08 Фламенко Хавьера Серрано Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

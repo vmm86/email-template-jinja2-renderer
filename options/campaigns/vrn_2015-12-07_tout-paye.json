@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "tout-paye",
                     "event_id": 637,
                     "img": "tout-paye_big_poster.jpg",
                     "alt": "2015-12-11 Всё оплачено... Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

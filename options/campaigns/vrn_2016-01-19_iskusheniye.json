@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "iskusheniye",
                     "event_id": 619,
                     "img": "iskusheniye.jpg",
                     "alt": "2016-02-09 Санкт-Петербургский театр танца «Искушение» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

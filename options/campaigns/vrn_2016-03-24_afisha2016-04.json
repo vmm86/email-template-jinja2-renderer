@@ -11,29 +11,43 @@
     [
         {
             "cells_number": 3,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "noskov",
                     "event_id": 983,
                     "img": 638,
                     "alt": "2016-04-02 Николай Носков. Юбилейный тур 6:0 Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "didyulya",
                     "event_id": 923,
                     "img": 617,
                     "alt": "2016-04-10 ДиДюЛя Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "lebedinoye-ozero",
                     "event_id": 1103,
                     "img": 685,
                     "alt": "2016-04-17 Классический Русский Балет Москва «Лебединое озеро» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

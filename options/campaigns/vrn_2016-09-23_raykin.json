@@ -19,14 +19,18 @@
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "raykin",
                     "event_id": 1260,
                     "img": "2016-09-23_raykin.jpg",
                     "alt": "2016-09-23 Константин Райкин Моноспектакль-концерт «Самое любимое» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         }
     ],
     "footer": [],

@@ -14,15 +14,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "sotkilava",
                     "event_id": 419,
                     "img": "2016-03-18_sotkilava.jpg",
                     "alt": "2016-03-18 Зураб Соткилава Театр оперы и балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

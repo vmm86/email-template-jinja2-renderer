@@ -15,29 +15,29 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "rep-nov2015-1",
                     "event_id": "http://theatre.bezantrakta.ru",
                     "img": "11.jpg",
                     "alt": "Репертуар на ноябрь 2015",
-                    "button": ""
+                    "button": {}
                 }
             ]
         },
         {
             "cells_number": 1,
-            "buttons": "",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "m-i-m",
                     "event_id": "http://theatre.bezantrakta.ru",
                     "img": "12.jpg",
                     "alt": "Репертуар на ноябрь 2015",
-                    "button": ""
+                    "button": {}
                 }
             ]
         }

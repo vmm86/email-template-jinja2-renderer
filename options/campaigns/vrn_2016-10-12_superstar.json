@@ -26,14 +26,18 @@
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "2016-10-12_superstar",
                     "event_id": 1238,
                     "img": "2016-10-12_superstar.jpg",
                     "alt": "2016-10-12 «Иисус Христос-суперзвезда!» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         }
     ],
     "footer": [],

@@ -23,14 +23,18 @@
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "winx",
                     "event_id": 1235,
                     "img": "2016-10-05_winx.jpg",
                     "alt": "2016-10-05 ФЕЕРИЯ ФЕЙ Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         }
     ],
     "footer": [],

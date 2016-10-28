@@ -11,15 +11,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "trofimov",
                     "event_id": 977,
                     "img": "2016-03-10_trofimov.jpg",
                     "alt": "2016-03-17 Сергей Трофимов Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

@@ -12,15 +12,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "gergiev",
                     "event_id": 1163,
                     "img": "2016-05-10_gergiev.jpg",
                     "alt": "2016-05-10 Московский Пасхальный Фестиваль Валерия Гергиева Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

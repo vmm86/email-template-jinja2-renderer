@@ -15,116 +15,163 @@
             "events":
             [
                 {
+                    "type": "image",
                     "content": "winx",
                     "event_id": 1235,
                     "img": 738,
                     "alt": "2016-10-05 Феерия Фей Воронежский Концертный Зал",
                     "date": "5/10",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "superstar",
                     "event_id": 1238,
                     "img": 740,
                     "alt": "2016-10-12 «Иисус Христос - суперзвезда!» Воронежский Концертный Зал",
                     "date": "12/10",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "nargiz",
                     "event_id": 1206,
                     "img": 735,
                     "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
                     "date": "28/10",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         },
         {
             "cells_number": 3,
             "events":
             [
                 {
+                    "type": "image",
                     "content": "shtraus-orkestr",
                     "event_id": 1200,
                     "img": 729,
                     "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
                     "date": "2/11",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "little-pony",
                     "event_id": 1269,
                     "img": 762,
                     "alt": "2016-11-13 Музыкальный спектакль «Литтл Пони» Воронежский Концертный Зал",
                     "date": "13/11",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "yolka",
                     "event_id": 1237,
                     "img": 739,
                     "alt": "2016-11-16 Ёлка Концертный зал Event-Hall",
                     "date": "16/11",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         },
         {
             "cells_number": 3,
             "events":
             [
                 {
+                    "type": "image",
                     "content": "staraya-deva",
                     "event_id": 1168,
                     "img": 721,
                     "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
                     "date": "26/11",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "lebedinoye-ozero",
                     "event_id": 1241,
                     "img": 685,
                     "alt": "2016-11-30 Классический Русский Балет Москва «Лебединое озеро» Воронежский Концертный Зал",
                     "date": "30/11",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "devyatova",
                     "event_id": 1201,
                     "img": 730,
                     "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
                     "date": "3/12",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
-            ],
-            "buttons": "bottom"
+            ]
         },
         {
             "cells_number": 3,
             "events":
             [
                 {
+                    "type": "image",
                     "content": "svinka-peppa",
                     "event_id": 1270,
                     "img": 763,
                     "alt": "2016-12-23 Свинка Пеппа «Дедморозное Настроение» Воронежский Концертный Зал",
                     "date": "23/12",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
                     "colspan": 2,
+                    "type": "image",
                     "content": "bezantrakta",
                     "event_id": "http://bezantrakta.ru",
                     "img": "bzlogo-telephone.png",
                     "alt": "bezantrakta.ru - билеты на концерты и спектакли в Воронеже",
                     "button": ""
                 }
-            ],
-            "buttons": "bottom"
+            ]
         }
     ],
     "footer": [],

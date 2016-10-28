@@ -44,55 +44,62 @@ They help to clearly identify clicks on each link and further commercial convers
     // Email header (may be an empty list)
     "header":
     [
-        // Each element of this list is wrapped into a paragraph
+        // HTML text information (each element of this list is wrapped into a paragraph)
         "Не пропусти!",
         "Уже в продаже лучшие билеты нового концертного сезона!"
     ],
-    // A list of rows of some clikable events' posters
+    // A list of rows that contain text description or some clikable events' posters
     "events_list":
     [
-        // Every child dictionary is one row in a table, that holds one or many posters of events
+        // Every child dictionary is one row in a table holding one or many posters of events
         {
             // Overall number of cells to be rendered within one row
             "cells_number": 2,
-            // Additional buttons may be rendered above or beyond posters:
-            // "top"
-            // "bottom"
-            "buttons": "top",
-            // A list of dictionaries with attributes of each event
+            // A list of dictionaries with information about each event
             "events":
             [
                 {
-                    // Name of event and `utm_content` value
+                    // Type of information within the cell
+                    // "text"   - text information
+                    // "image"  - poster (with optional button)
+                    "type": "text",
+                    // Text information (only for "type": "text")
+                    "text":
+                    [
+                        // HTML text information (each element of this list is divided by <br>)
+                        "<strong>Ёлка. Большое сольное выступление!</strong>",
+                        "Возрастное ограничение 12+",
+                    ]
+                },
+                {
+                    "type": "image",
+                    // Name of event and `utm_content` value (only for "type": "image")
                     "content": "nargiz",
+                    // Link to event (only for "type": "image")
                     // int - ID of event
                     // str - external link
                     "event_id": 1206,
-                    // int - link to small vertical event's poster
-                    // str - link to big vertical campaign's poster
+                    // Link to image (only for "type": "image")
+                    // int - small vertical event's poster
+                    // str - big vertical campaign's poster
                     "img": "2016-10-28_nargiz.jpg",
-                    // `alt` attribute of poster's image
+                    // `alt` attribute of poster's image (only for "type": "image")
                     "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
-                    // Date of event as str
+                    // Date of event as str (only for "type": "image")
                     "date": "28/10",
-                    // Type of button
+                    // Type of button (only for "type": "image")
                     // "buy"           - to buy a ticket
                     // "registration"  - to register on some external site
-                    "button": "buy"
-                },
-                {
-                    "content": "shtraus-orkestr",
-                    "event_id": 1200,
-                    "img": "2016-11-02_shtraus-orkestr.jpg",
-                    "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
-                    "date": "2/11",
-                    "button": "buy"
+                    "button": "buy",
+                    // Button position
+                    // "top"    - above the poster
+                    // "bottom" - beyond the poster
+                    "button_position": "bottom"
                 }
             ]
         },
         {
             "cells_number": 2,
-            "buttons": "top",
             "events":
             [
                 {
@@ -113,7 +120,17 @@ They help to clearly identify clicks on each link and further commercial convers
     [
         // Each element of this list is wrapped into a paragraph
         "С полной информацией о всех мероприятиях Вы можете ознакомиться на нашем сайте..."
-    ]
+    ],
+    // Custom links to social networks (may be an empty list)
+    // If not empty, it will override the default links from the main template
+    "social":
+    {
+        // "vkontakte" - VKontakte
+        // "facebook"  - Facebook
+        // "twitter"   - Twitter
+        // "instagram" - Instagram
+        "vkontakte": "https://vk.com/event127410472"
+    }
 }
 ```
 
@@ -130,9 +147,9 @@ They help to clearly identify clicks on each link and further commercial convers
     // Full kink to the main logo at the top
     "source_logo": "http://bezantrakta.ru/emailing/images/bzlogo-telephone.jpg",
     // `alt` attribute of the main logo
-    "source_logo_alt": "Афиша Воронежа - билеты на концерты и спектакли в Воронеже",
+    "source_logo_alt": "bezantrakta.ru - билеты на концерты и спектакли в Воронеже",
     // Text in social icons' block at the bottom
-    "source_social_text": "Заходите в наши группы в социальных сетях..."
+    "source_social_text": "Присоединяйтесь к нашим официальным группам в социальных сетях!<br>\nБудьте в курсе последних событий!<br>\n"
 }
 ```
 

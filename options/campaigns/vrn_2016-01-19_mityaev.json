@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "mityaev",
                     "event_id": 802,
                     "img": "2016-01-21_mityaev.jpg",
                     "alt": "2016-02-11 Олег Митяев Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

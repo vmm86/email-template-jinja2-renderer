@@ -11,43 +11,61 @@
     [
         {
             "cells_number": 2,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "nargiz",
                     "event_id": 1206,
                     "img": "2016-10-28_nargiz.jpg",
                     "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "shtraus-orkestr",
                     "event_id": 1200,
                     "img": "2016-11-02_shtraus-orkestr.jpg",
                     "alt": "2016-11-02 Венский Филармонический Штраус Оркестр Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         },
         {
             "cells_number": 2,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "staraya-deva",
                     "event_id": 1168,
                     "img": "2016-11-28_staraya-deva.jpg",
                     "alt": "2016-11-26 «Старая дева» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "devyatova",
                     "event_id": 1201,
                     "img": "2016-12-03_devyatova.jpg",
                     "alt": "2016-12-03 Марина Девятова Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

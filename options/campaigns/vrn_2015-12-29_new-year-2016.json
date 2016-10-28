@@ -11,15 +11,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "new-year-2016",
                     "event_id": "http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=new-year-2016&amp;utm_content=new-year-2016",
                     "img": "new-year-2016.gif",
                     "alt": "С Новым Годом и Рождеством!",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

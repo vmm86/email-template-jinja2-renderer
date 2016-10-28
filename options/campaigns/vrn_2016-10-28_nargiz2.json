@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "2016-10-28_nargiz2",
                     "event_id": 1206,
                     "img": "2016-10-28_nargiz.jpg",
                     "alt": "2016-10-28 Наргиз Закирова «Танцы на битых стеклах» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

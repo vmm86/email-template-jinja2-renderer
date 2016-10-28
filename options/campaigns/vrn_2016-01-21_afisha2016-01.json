@@ -11,85 +11,127 @@
     [
         {
             "cells_number": 3,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "m-i-m",
                     "event_id": 771,
                     "img": 548,
                     "alt": "2016-02-05 МАСТЕР И МАРГАРИТА Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "mityaev",
                     "event_id": 802,
                     "img": 556,
                     "alt": "2016-02-11 Олег Митяев Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "mal-komedii",
                     "event_id": 884,
                     "img": 592,
                     "alt": "2016-02-20 «Маленькие комедии» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         },
         {
             "cells_number": 3,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "robokar-poli",
                     "event_id": 935,
                     "img": 625,
                     "alt": "2016-03-20 «Робокар Поли» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "mamenko",
                     "event_id": 800,
                     "img": 554,
                     "alt": "2016-03-03 Игорь Маменко Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "trofimov",
                     "event_id": 977,
                     "img": 632,
                     "alt": "2016-03-17 Сергей Трофимов Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         },
         {
             "cells_number": 3,
-            "buttons": "bottom",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "bogushevskaya",
                     "event_id": 961,
                     "img": 626,
                     "alt": "2016-03-16 Ирина Богушевская Филармония",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "noskov",
                     "event_id": 983,
                     "img": 638,
                     "alt": "2016-04-02 Николай Носков. Юбилейный тур 6:0 Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "didyulya",
                     "event_id": 923,
                     "img": 617,
                     "alt": "2016-04-10 ДиДюЛя Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

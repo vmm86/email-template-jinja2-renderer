@@ -16,15 +16,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "mgzavrebi",
                     "event_id": 1123,
                     "img": "2016-04-04_mgzavrebi.jpg",
                     "alt": "2016-04-13 MGZAVREBI Филармония",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

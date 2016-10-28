@@ -12,15 +12,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "didyulya",
                     "event_id": 923,
                     "img": "2016-03-24_didyulya.jpg",
                     "alt": "2016-04-10 ДиДюЛя Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

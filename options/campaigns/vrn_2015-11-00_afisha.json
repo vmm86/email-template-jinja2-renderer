@@ -15,43 +15,61 @@
     [
         {
             "cells_number": 2,
-            "buttons": "",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "lyubov-ne-kartoshka",
                     "event_id": 585,
                     "img": 446,
                     "alt": "2015-12-07 Любовь - не картошка, не выбросишь в окошко Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "tout-paye",
                     "event_id": 637,
                     "img": 469,
-                    "alt": "2015-12-10 «Tout paye или Все оплачено» Театр Оперы и Балета",
-                    "button": "buy"
+                    "alt": "2015-12-10 «Tout paye, или Всё оплачено» Театр Оперы и Балета",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         },
         {
             "cells_number": 2,
-            "buttons": "",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "flamenko",
                     "event_id": 751,
                     "img": 538,
                     "alt": "2015-12-08 Фламенко Хавьера Серрано Театр Оперы и Балета",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 },
                 {
+                    "type": "image",
                     "content": "m-i-m",
                     "event_id": 771,
                     "img": 548,
                     "alt": "2016-02-05 МАСТЕР И МАРГАРИТА Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }

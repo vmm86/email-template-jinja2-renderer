@@ -14,22 +14,23 @@
     [
         {
             "cells_number": 2,
-            "buttons": "",
             "events":
             [
                 {
+                    "type": "image",
                     "content": "toib-logo",
                     "event_id": "http://theatre.bezantrakta.ru",
                     "img": "toib.jpg",
                     "alt": "Театр оперы и балета",
-                    "button": ""
+                    "button": {}
                 },
                 {
+                    "type": "image",
                     "content": "tdik-logo",
                     "event_id": "http://theatre.bezantrakta.ru",
                     "img": "tdik.jpg",
                     "alt": "Театр драмы им. Кольцова",
-                    "button": ""
+                    "button": {}
                 }
             ]
         }

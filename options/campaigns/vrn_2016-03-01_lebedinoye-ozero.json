@@ -13,15 +13,19 @@
     [
         {
             "cells_number": 1,
-            "buttons": "top",
             "events" :
             [
                 {
+                    "type": "image",
                     "content": "lebedinoye-ozero",
                     "event_id": 1103,
                     "img": "2016-02-29_lebedinoye-ozero.jpg",
                     "alt": "2016-04-17 Классический Русский Балет «Лебединое озеро» Воронежский Концертный Зал",
-                    "button": "buy"
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
                 }
             ]
         }
