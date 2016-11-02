@@ -1,0 +1,46 @@
+{
+    "campaign": "yolka2",
+    "title": "Ёлка! Специальное предложение к Международному дню студента",
+    "subtitle": "Уже скоро!",
+    "logo": "top",
+    "header":
+    [
+        "<strong>Специальное предложение к Международному дню студента на <a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=1237&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=yolka2&amp;utm_content=yolka2_text\" target=\"_blank\">большое сольное выступление Ёлки</a>!</strong>",
+        "При предъявлении студенческого билета в любой кассе <a href=\"http://http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=yolka2&amp;utm_content=bezantrakta-text\" target=\"_blank\"><img src=\"http://bezantrakta.ru/emailing/images/bzlogo-text.jpg\" width=\"100\" height=\"20\" style=\"vertical-align: bottom;\"></a> стоимость танцпартера 1300 рублей.",
+        "Акция действует 7 дней, стартуем уже сегодня.",
+        "Количество билетов ограничено!",
+        "&nbsp;",
+        "Не пропустите!",
+        "С наступающим праздником!"
+    ],
+    "events_list": 
+    [
+        {
+            "cells_number": 1,
+            "events" :
+            [
+                {
+                    "type": "image",
+                    "content": "yolka2",
+                    "event_id": 1237,
+                    "img": "2016-11-16_yolka2.jpg",
+                    "alt": "2016-11-16 ЁЛКА Концертный зал Event-Hall",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer": [
+        "16 ноября, концертный зал Event Hall.",
+        "Начало мероприятия в 20:00.",
+        "Возрастное ограничение 12+.",
+        "Справки по тел. <a href=\"tel:+74732100102\" target=\"_blank\"><strong>(473) 210-01-02</strong></a>."
+    ],
+    "social": {
+        "vkontakte": "https://vk.com/event127421541"
+    }
+}
