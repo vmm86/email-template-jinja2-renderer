@@ -290,7 +290,7 @@ ul.small-text li {
                                             href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
                                         {% else %}
                                             href="{{ event.event_id }}/?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
-                                        {% endif%}
+                                        {% endif %}
                                             title="{{ event.alt }}"
                                             target="_blank">
                                                 <img
@@ -309,6 +309,12 @@ ul.small-text li {
                                             <br>&nbsp;
                                         {% endif %}
                                         {# кнопка сверху #}
+
+                                        {# дата #}
+                                        {% if event.date %}
+                                            <span class="date">{{ event.date }}</span>
+                                        {% endif %}
+                                        {# дата #}
 
                                         {# постер #}
                                         <a
@@ -358,9 +364,6 @@ ul.small-text li {
                                         {% endif %}
                                         {# кнопка снизу #}
 
-                                    {% if event.date %}
-                                        <span class="date">{{ event.date }}</span>
-                                    {% endif %}
                                     </td>
                                 {% endif %}
                                 {# изображение #}
