@@ -7,41 +7,41 @@ import os
 import premailer
 import re
 
-# Исходный шаблон email-рассылки
+# Basic email campaign's template
 template = jinja2.Template(
     open('template.j2.html', 'r').read()
 )
 
-# Пути к параметрам рассылок и сайтов, на которые они ведут
+# Paths to email campaign and source options (parameters)
 campaigns = os.path.join(os.getcwd(), 'options', 'campaigns')
 sources   = os.path.join(os.getcwd(), 'options', 'sources')
 
 for opt in os.listdir(campaigns):
     if opt.endswith('.json'):
-        # Берутся параметры конкретной рассылки
+        # Get current template options
         cur_campaign = json.load(
             open(os.path.join(campaigns, opt), 'r')
         )
 
-        # Рассылка генерируется, если опция `renderable` для этого включена
+        # Tempate to be rendered only if `renderable` option is true
         if cur_campaign['renderable']:
-            # В зависимости от организации берутся именно её параметры
+            # Get source options for corresponding campaign options
             for src in os.listdir(sources):
                 if src == opt.split('_')[0] + '.json':
                     cur_source = json.load(
                         open(os.path.join(sources, src), 'r')
                     )
 
-            # Слияние словарей с параметрами рассылки и её сайта
+            # Join campaign and source options into one dictionary
             cur_campaign.update(cur_source)
             # print(json.dumps(
             #     cur_campaign, indent=4, ensure_ascii=False, sort_keys=False)
             # )
 
-            # Отрисовка и сохранение шаблона email-рассылки
+            # Render email template with options needed
             cur_template = template.render(cur_campaign)
 
-            # Инлайнинг стилей с помощью premailer
+            # Inline CSS styles
             cur_template = premailer.Premailer(
                 cur_template,
                 keep_style_tags=False,
@@ -52,11 +52,11 @@ for opt in os.listdir(campaigns):
                 remove_unset_properties=False
             ).transform()
 
-            # Минификация кода
+            # Minify source code
             cur_template = re.sub(r'^\ +', r'', cur_template, 0, re.MULTILINE)
             cur_template = re.sub(r'\n',   r'', cur_template)
 
-            # Сохранение готовой подписи в HTML-файл
+            # Save prepared template to an HTML file
             cur_output = open(
                 os.path.join(os.getcwd(), 'templates',
                     opt[:-5] + '.html'

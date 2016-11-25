@@ -216,7 +216,7 @@ ul.small-text li {
                             <tbody>
                                 <tr>
                             {% for event in events_row.events %}
-                                {# всё (временно) #}
+                                {# everything (temporary) #}
                                 {% if not event.type %}
                                     <td align="center"
                                     {% if event.colspan %}
@@ -248,9 +248,9 @@ ul.small-text li {
                                     {% endif %}
                                     </td>
                                 {% endif %}
-                                {# всё (временно) #}
+                                {# everything (temporary) #}
 
-                                {# текст #}
+                                {# text #}
                                 {% if event.type and event.type == "text" %}
                                     <td align="center" valign="top"
                                     {% if event.colspan %}
@@ -267,9 +267,9 @@ ul.small-text li {
                                         </p>
                                     </td>
                                 {% endif %}
-                                {# текст #}
+                                {# text #}
 
-                                {# изображение #}
+                                {# image #}
                                 {% if event.type and event.type == "image" %}
                                     <td align="center"
                                     {% if event.colspan %}
@@ -279,7 +279,7 @@ ul.small-text li {
                                     {% endif %}
                                     >
 
-                                        {# кнопка сверху #}
+                                        {# top button #}
                                         {% if event.button and event.button.position == "top" %}
                                             <a
                                         {% if event.event_id is number %}
@@ -304,15 +304,15 @@ ul.small-text li {
                                             </a>
                                             <br>&nbsp;
                                         {% endif %}
-                                        {# кнопка сверху #}
+                                        {# top button #}
 
-                                        {# дата #}
+                                        {# date #}
                                         {% if event.date %}
                                             <span class="date">{{ event.date }}</span>
                                         {% endif %}
-                                        {# дата #}
+                                        {# date #}
 
-                                        {# постер #}
+                                        {# poster #}
                                         <a
                                         {% if event.event_id is number %}
                                             href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
@@ -331,9 +331,9 @@ ul.small-text li {
                                                 width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
                                                 style="width: 100%; height: auto;">
                                         </a>
-                                        {# постер #}
+                                        {# poster #}
 
-                                        {# кнопка снизу #}
+                                        {# bottom button #}
                                         {% if event.button and event.button.position == "bottom" %}
                                             <br>&nbsp;
                                             <a
@@ -358,11 +358,11 @@ ul.small-text li {
                                                     style="width: 100%; height: auto;">
                                             </a>
                                         {% endif %}
-                                        {# кнопка снизу #}
+                                        {# bottom button #}
 
                                     </td>
                                 {% endif %}
-                                {# изображение #}
+                                {# image #}
 
                                 {% if loop.index < events_row.events|length|int %}
                                     <td width="20">&nbsp;</td>
