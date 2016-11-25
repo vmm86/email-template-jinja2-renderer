@@ -24,10 +24,10 @@ for opt in os.listdir(campaigns):
         )
 
         # В зависимости от организации берутся именно её параметры
-        for src in ['vrn', 'vrn-theatre']:
-            if opt.split('_')[0] == src:
+        for src in os.listdir(sources):
+            if src == opt.split('_')[0] + '.json':
                 cur_source = json.load(
-                    open(os.path.join(sources, src + '.json'), 'r')
+                    open(os.path.join(sources, src), 'r')
                 )
 
         # Слияние словарей с параметрами рассылки и её сайта
