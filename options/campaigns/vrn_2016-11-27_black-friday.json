@@ -1,0 +1,82 @@
+{
+    "campaign": "2016-11-25_black-friday",
+    "title": "«Чёрная Пятница» на bezantrakta.ru",
+    "subtitle": "Только с 25 по 27 ноября 1 + 1 = 3",
+    "logo": "top",
+    "header":
+    [
+        "ВНИМАНИЕ!!!",
+        "«Чёрная Пятница» пришла! ",
+        "Уже сегодня и до 19:00 27 ноября включительно действует специальное предложение на покупку билетов!",
+        "<strong>1 + 1 = 3</strong>",
+        "Акция распространяется на покупку двух билетов одной ценовой категории, а третий билет – в подарок!",
+        "В акции участвуют следующие мероприятия:"
+    ],
+    "events_list": 
+    [
+        {
+            "cells_number": 4,
+            "events" :
+            [
+                {
+                    "type": "image",
+                    "content": "2016-11-27-staraya-deva",
+                    "event_id": 1239,
+                    "img": "2016-11-27_staraya-deva_small.jpg",
+                    "alt": "2016-11-27 «Старая дева» Воронежский Концертный Зал",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "2016-11-30_lebedinoye-ozero",
+                    "event_id": 1241,
+                    "img": 685,
+                    "alt": "2016-11-30 Классический Русский Балет Москва «Лебединое озеро» Воронежский Концертный Зал",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "2016-12-23_svinka-peppa",
+                    "event_id": 1270,
+                    "img": 763,
+                    "alt": "2016-12-23 СВИНКА ПЕППА «ДЕДМОРОЗНОЕ НАСТРОЕНИЕ» Воронежский Концертный Зал",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "2017-01-09_schelkunchik",
+                    "event_id": 1383,
+                    "img": 605,
+                    "alt": "2017-01-09 «ЩЕЛКУНЧИК» Воронежский Концертный Зал",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer":
+    [
+        "Билеты можно приобрести на сайте, а также в кассах города:",
+        "● касса <a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=2016-11-25_black-friday&amp;utm_content=bezantrakta-text\" target=\"_blank\"><img src=\"http://bezantrakta.ru/emailing/images/bzlogo-text.jpg\" width=\"100\" height=\"20\" style=\"vertical-align: bottom;\"></a> в Театре Оперы и Балета.",
+        "● касса в ТЦ «Галерея Чижова», минус 2-й этаж.",
+        "Кассы работают с 10:00 до 19:00.",
+        "Справки по телефону <a href=\"tel:84732100102\">210-01-02</a>."
+
+    ],
+    "social": {}
+}
