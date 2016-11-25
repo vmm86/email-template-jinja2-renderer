@@ -35,6 +35,9 @@ They help to clearly identify clicks on each link and further commercial convers
 
 ```js
 {
+    // Boolean attribute to render new template from the current source info file
+    // or to skip rendering if it has been already rendered properly
+    "renderable": true,
     // Campaign's name and `utm_campaign` value
     "campaign": "afisha-2016-10",
     // <title> text that should be the same as email subject
