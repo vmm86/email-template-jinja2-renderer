@@ -1,0 +1,41 @@
+{
+    "renderable": false,
+    "campaign": "chambervrn",
+    "title": "Билеты в Камерный театр теперь на bezantrakta.ru",
+    "subtitle": "Уже в продаже!",
+    "logo": "top",
+    "header":
+    [
+        "{$name}, спешим сообщить отличную новость!",
+        "Теперь на нашем сайте в режиме online Вы можете <a href=\"http://bezantrakta.ru/chambervrn?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=chambervrn&amp;utm_content=chambervrn_text\" target=\"_blank\">приобрести билеты на спектакли Камерного театра!</a>",
+        "Вам потребуется лишь выбрать мероприятие, места и провести оплату с помощью банковской карты платёжных систем <img src=\"http://bezantrakta.ru/images/banners/visa.png\" width=\"32\" height=\"20\" style=\"vertical-align: bottom;\"> VISA International и <img src=\"http://bezantrakta.ru/images/banners/mastercard.png\" width=\"32\" height=\"20\" style=\"vertical-align: bottom;\"> MasterCard World Wide.",
+        "После успешного подтверждения оплаты PDF-файлы с билетами будут отправлены на указанную Вами электронную почту. Билет на листе A4 обрезать не нужно! Для удобства его можно сложить по пунктирным линиям сгиба. Распечатайте билеты на листе формата А4 и предъявите их при входе на мероприятие!",
+        "Уже сейчас на сайте доступны билеты в Камерный театр на декабрь и январь!"
+    ],
+    "events_list": 
+    [
+        {
+            "cells_number": 1,
+            "events" :
+            [
+                {
+                    "type": "image",
+                    "content": "chambervrn",
+                    "event_id": "http://bezantrakta.ru/chambervrn",
+                    "img": "2016-12-00_chambervrn.jpg",
+                    "alt": "2016-12-00 Билеты на спектакли Камерного театра на bezantrakta.ru",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer":
+    [
+        "Справки по телефону <a href=\"tel:84732100102\">210-01-02</a>."
+    ],
+    "social": {}
+}
