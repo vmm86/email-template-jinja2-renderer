@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-import jinja2
+from jinja2 import Environment, FileSystemLoader
 import json
 import os
 import premailer
 import re
 
 # Basic email campaign's template
-template = jinja2.Template(
-    open('template.j2.html', 'r').read()
-)
+this_dir = os.path.dirname(os.path.abspath(__file__))
+template = Environment(
+    loader=FileSystemLoader(this_dir),
+    trim_blocks=True
+).get_template('template.j2.html')
 
 # Paths to email campaign and source options (parameters)
 campaigns = os.path.join(os.getcwd(), 'options', 'campaigns')

@@ -8,149 +8,8 @@
 </head>
 <body>
 
-<style type="text/css">
-body {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-}
-a {
-    color: #0055cc !important;
-    font-weight: bold;
-    text-decoration: underline;
-}
-a span {
-    color: #0055cc;
-}
-a img {
-    border: 0;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-td {
-    padding: 0;
-}
-#preview {
-    display: none !important;
-    color: #ffffff;
-    font-size: 0px !important;
-    line-height: 0px !important;
-    margin: 0;
-    padding: 0;
-}
-#mailsub {
-    background-color: #626262;
-    table-layout: fixed;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-.main {
-    background-color: #ffffff;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-}
-.table-wrapper {
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-}
-.columns-1,
-.columns-2,
-.columns-3 {
-    width: 100%;
-}
-.logo {
-    padding: 0;
-}
-.logo img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-}
-p,
-.paragraph {
-    color: #000000;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: justify;
-    line-height: 20px;
-    padding: 0;
-    margin: 10px 0;
-}
-.header {
-    display: block;
-    color: #000000;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px !important;
-    font-weight: bold;
-    text-align: left;
-    line-height: 20px;
-    padding: 0;
-    margin: 10px 0 !important;
-}
-ol, ul {
-    padding-left: 16px;
-    margin: 10px 0;
-}
-ol li, ul li {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    text-align: left;
-}
-.content p,
-.content ul {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 10px 0;
-}
-.content p:first-child,
-.content ul:first-child {
-    margin: 0 0 10px 0;
-}
-.content p:last-child,
-.content ul:last-child {
-    margin: 10px 0 0 0;
-}
-.content p:only-child,
-.content ul:only-child {
-    margin: 0;
-}
-.small-text,
-ol.small-text li,
-ul.small-text li {
-    font-size: 10px;
-}
-.button {
-    padding: 6px 0;
-}
-.date {
-    color: #000000;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-</style>
+{% from "macros/style.j2.html" import style_macro %}
+{{ style_macro() }}
 
 <body bgcolor="ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" offset="0">
 
@@ -161,339 +20,48 @@ ul.small-text li {
     <table class="main" align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
     <tbody>
     {% if logo == "top" %}
-        <tr>
-            <td class="logo">
-                <a href="http://{{ source_link }}/?utm_source={{ source}}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ source }}_logo" title="{{ source_logo_alt }}" target="_blank">
-                    <img src="{{ source_logo }}" alt="{{ source_logo_alt }}" width="600" style="width: 100%; height: auto;">
-                </a>
-            </td>
-        </tr>
+        {% from "macros/logo.j2.html" import logo_macro with context %}
+        {{ logo_macro(source, source_link, source_logo, source_logo_alt, campaign) }}
+    {% else %}
+        <p></p>
     {% endif %}
 
     {% if header %}
-        <tr>
-            <td>
-                <table class="table-wrapper" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
-                    <tr>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                        <td width="560">
-                            <table class="columns-1 content" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                    {% if not logo %}
-                                        <p></p>
-                                    {% endif %}
-                                    {% for item in header %}
-                                        <p>{{ item }}</p>
-                                    {% endfor %}
-                                    </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </td>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+        {% from "macros/header_body_footer.j2.html" import text_block_macro with context %}
+        {{ text_block_macro(header) }}
     {% endif %}
 
-    {% if events_list %}
-        {% for events_row in events_list %}
-        <tr>
-            <td class="vspacer" height="10"></td>
-        </tr>
+    {% if events_list_1 %}
+        {% for events_row in events_list_1 %}
+            {% from "macros/events_list.j2.html" import events_list_macro with context %}
+            {{ events_list_macro(events_row) }}
+        {% endfor %}
+    {% endif %}
 
-        <tr>
-            <td class="posters posters-{{ events_row.cells_number }}">
-                <table class="table-wrapper" align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tbody>
-                    <tr>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                        <td width="560">
-                            <table class="columns-{{ events_row.cells_number }}" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                                <tr>
-                            {% for event in events_row.events %}
-                                {# everything (temporary) #}
-                                {% if not event.type %}
-                                    <td align="center"
-                                    {% if event.colspan %}
-                                        width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
-                                    {% else %}
-                                        width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                    {% endif %}
-                                    >
-                                        <a
-                                        {% if event.event_id is number %}
-                                            href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
-                                        {% else %}
-                                            href="{{ event.event_id }}/?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
-                                        {% endif%}
-                                        title="{{ event.alt }}"
-                                        target="_blank">
-                                            <img
-                                            {% if event.img is number %}
-                                                src="http://{{ source_link }}/images/show/level2/{{ event.img }}.jpg"
-                                            {% else %}
-                                                src="http://{{ source_link }}/emailing/campaigns/{{ event.img }}"
-                                            {% endif%}
-                                                alt="{{ event.alt }}"
-                                                width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                                style="width: 100%; height: auto;">
-                                        </a>
-                                    {% if event.date %}
-                                        <span class="date">{{ event.date }}</span>
-                                    {% endif %}
-                                    </td>
-                                {% endif %}
-                                {# everything (temporary) #}
+    {% if body %}
+        {% from "macros/header_body_footer.j2.html" import text_block_macro with context %}
+        {{ text_block_macro(body) }}
+    {% endif %}
 
-                                {# text #}
-                                {% if event.type and event.type == "text" %}
-                                    <td align="center" valign="top"
-                                    {% if event.colspan %}
-                                        width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
-                                    {% else %}
-                                        width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                    {% endif %}
-                                    >
-                                        <p>
-                                        {% for item in event.text %}
-                                            {{ item }}
-                                            <br>
-                                        {% endfor %}
-                                        </p>
-                                    </td>
-                                {% endif %}
-                                {# text #}
-
-                                {# image #}
-                                {% if event.type and event.type == "image" %}
-                                    <td align="center"
-                                    {% if event.colspan %}
-                                        width="{{ ((560-20*(events_row.cells_number-1))/(events_row.cells_number))*event.colspan|int }}"
-                                    {% else %}
-                                        width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                    {% endif %}
-                                    >
-
-                                        {# top button #}
-                                        {% if event.button and event.button.position == "top" %}
-                                            <a
-                                        {% if event.event_id is number %}
-                                            href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
-                                        {% else %}
-                                            href="{{ event.event_id }}/?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
-                                        {% endif %}
-                                            title="{{ event.alt }}"
-                                            target="_blank">
-                                                <img
-                                            {% if event.button.type == "buy" %}
-                                                {% if events_row.cells_number < 2 %}
-                                                    src="http://{{ source_link }}/emailing/images/buy.png" alt="Купить билет"
-                                                {% else %}
-                                                    src="http://{{ source_link }}/emailing/images/buy-small.png" alt="Купить"
-                                                {% endif %}
-                                            {% elif event.button.type == "registration" %}
-                                                    src="http://{{ source_link }}/emailing/images/registration.png" alt="Регистрация"
-                                            {% endif %}
-                                                    width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                                    style="width: 100%; height: auto;">
-                                            </a>
-                                            <br>&nbsp;
-                                        {% endif %}
-                                        {# top button #}
-
-                                        {# date #}
-                                        {% if event.date %}
-                                            <span class="date">{{ event.date }}</span>
-                                        {% endif %}
-                                        {# date #}
-
-                                        {# poster #}
-                                        <a
-                                        {% if event.event_id is number %}
-                                            href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
-                                        {% else %}
-                                            href="{{ event.event_id }}/?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_poster"
-                                        {% endif%}
-                                        title="{{ event.alt }}"
-                                        target="_blank">
-                                            <img
-                                            {% if event.img is number %}
-                                                src="http://{{ source_link }}/images/show/level2/{{ event.img }}.jpg"
-                                            {% else %}
-                                                src="http://{{ source_link }}/emailing/campaigns/{{ event.img }}"
-                                            {% endif%}
-                                                alt="{{ event.alt }}"
-                                                width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                                style="width: 100%; height: auto;">
-                                        </a>
-                                        {# poster #}
-
-                                        {# bottom button #}
-                                        {% if event.button and event.button.position == "bottom" %}
-                                            <br>&nbsp;
-                                            <a
-                                        {% if event.event_id is number %}
-                                            href="http://{{ source_link }}/index.php?option=com_afisha&amp;view=event&amp;id={{ event.event_id }}&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
-                                        {% else %}
-                                            href="{{ event.event_id }}/?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ event.content or campaign }}_button"
-                                        {% endif%}
-                                            title="{{ event.alt }}"
-                                            target="_blank">
-                                                <img
-                                            {% if event.button.type == "buy" %}
-                                                {% if events_row.cells_number < 2 %}
-                                                    src="http://{{ source_link }}/emailing/images/buy.png" alt="Купить билет"
-                                                {% else %}
-                                                    src="http://{{ source_link }}/emailing/images/buy-small.png" alt="Купить"
-                                                {% endif %}
-                                            {% elif event.button.type == "registration" %}
-                                                    src="http://{{ source_link }}/emailing/images/registration.png" alt="Регистрация"
-                                            {% endif %}
-                                                    width="{{ (560-20*(events_row.cells_number-1))/(events_row.cells_number)|int }}"
-                                                    style="width: 100%; height: auto;">
-                                            </a>
-                                        {% endif %}
-                                        {# bottom button #}
-
-                                    </td>
-                                {% endif %}
-                                {# image #}
-
-                                {% if loop.index < events_row.events|length|int %}
-                                    <td width="20">&nbsp;</td>
-                                {% endif %}
-                            {% endfor %}
-                                </tr>
-                            </tbody>
-                            </table>
-                        </td>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                    </tr>
-                </tbody>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="vspacer" height="10"></td>
-        </tr>
+    {% if events_list_2 %}
+        {% for events_row in events_list_2 %}
+            {% from "macros/events_list.j2.html" import events_list_macro with context %}
+            {{ events_list_macro(events_row) }}
         {% endfor %}
     {% endif %}
 
     {% if footer %}
-        <tr>
-            <td>
-                <table class="table-wrapper" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tbody>
-                    <tr>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                        <td width="560">
-                            <table class="columns-1 content" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td>
-                                    {% for item in footer %}
-                                        <p>{{ item }}</p>
-                                    {% endfor %}
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                    </tr>
-                </tbody>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="vspacer" height="10"></td>
-        </tr>
+        {% from "macros/header_body_footer.j2.html" import text_block_macro with context %}
+        {{ text_block_macro(footer) }}
     {% endif %}
 
     {% if logo == "bottom" %}
-        <tr>
-            <td class="logo">
-                <a href="http://{{ source_link }}/?utm_source={{ source}}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content={{ campaign }}_logo" title="{{ source_logo_alt }}" target="_blank">
-                    <img src="{{ source_logo }}" alt="{{ source_logo_alt }}" width="600" style="width: 100%; height: auto;">
-                </a>
-            </td>
-        </tr>
+        {% from "macros/logo.j2.html" import logo with context %}
+        {{ logo(source, source_link, source_logo, source_logo_alt, campaign) }}
     {% endif %}
 
-        <tr>
-            <td class="content">
-                <table class="table-wrapper" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tbody>
-                    <tr>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                        <td width="560">
-                            <table class="columns-1" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p class="header">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
-                                    </td>
-                                </tr>
-                                {#
-                                <tr>
-                                    <td class="vspacer" height="0"></td>
-                                </tr>
-                                #}
-                                <tr>
-                                    <td>
-                                        <p>{{ source_social_text }}</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="vspacer" height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table bgcolor="ffffff" align="center" border="0" cellpadding="0" style="Margin: auto; margin-bottom: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td width="48">
-                                                    <a href="{% if social.vkontakte %}{{ social.vkontakte }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=vkontakte{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=31&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=vkontakte{% endif %}" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/vkontakte.jpg" alt="ВКонтакте" style="width: 48px; height: 48px;">
-                                                    </a>
-                                                </td>
-                                                <td class="hspacer" width="20">&nbsp;</td>
-                                                <td width="48">
-                                                    <a href="{% if social.facebook %}{{ social.facebook }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=facebook{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=30&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=facebook{% endif %}" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/facebook.jpg" alt="Facebook" style="width: 48px; height: 48px;">
-                                                    </a>
-                                                </td>
-                                                <td class="hspacer" width="20">&nbsp;</td>
-                                                <td width="48">
-                                                    <a href="{% if social.twitter %}{{ social.twitter }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=twitter{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=32&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=twitter{% endif %}" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/twitter.jpg" alt="Твиттер" style="width: 48px; height: 48px;">
-                                                    </a>
-                                                </td>
-                                                <td class="hspacer" width="20">&nbsp;</td>
-                                                <td width="48">
-                                                    <a href="{% if social.instagram %}{{ social.instagram }}?utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=instagram{% else %}http://{{ source_link }}/index.php?option=com_banners&amp;task=click&amp;bid=34&amp;utm_source={{ source }}&amp;utm_medium=email&amp;utm_campaign={{ campaign }}&amp;utm_content=instagram{% endif %}" target="_blank">
-                                                        <img width="48" height="48" src="http://{{ source_link }}/emailing/images/instagram.jpg" alt="Инстаграм" style="width: 48px; height: 48px;">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </td>
-                        <td class="hspacer" width="20">&nbsp;</td>
-                    </tr>
-                </tbody>
-                </table>
-            </td>
-        </tr>
+{% from "macros/social.j2.html" import social_macro with context %}
+{{ social_macro(social, source, source_social_text, source_link, campaign) }}
 
     </tbody>
     </table>
