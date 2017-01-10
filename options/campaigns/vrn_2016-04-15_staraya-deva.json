@@ -10,7 +10,7 @@
         "Блестящая игра актёров заставляет зрителей смеяться, грустить <span style=\"display: inline-block;\">и верить необузданной фантазии автора.</span>",
         "<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=1168&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=staraya-deva&amp;utm_content=staraya-deva_text\" target=\"_blank\">«Старая Дева»</a>, Воронежский концертный зал, 26 ноября 2016 года, начало в 19:00.</strong>"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -31,6 +31,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer":
     [
         "Это прекрасная работа великих актеров, и все актуально, потому что по-настоящему.",

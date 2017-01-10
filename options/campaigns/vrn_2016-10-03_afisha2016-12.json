@@ -9,7 +9,7 @@
         "Самые интересные мероприятия.",
         "Выбирай своё направление!"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 3,
@@ -175,6 +175,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [],
     "social": {}
 }

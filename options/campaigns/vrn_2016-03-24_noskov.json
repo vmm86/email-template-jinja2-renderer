@@ -9,7 +9,7 @@
         "<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=983&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=noskov&amp;utm_content=noskov_text\" target=\"_blank\">Николай Носков</a> в Воронеже с юбилейным концертом</strong>.<br>Театр оперы и балета, 2 апреля 2016 г., начало в 19:00.",
         "<strong>12 января артист отметил свой день рождения, а уже в феврале стартовал новый Гастрольный тур «6:0».<br>Название говорит само за себя. А зрителей ждет множество открытий и сюрпризов</strong>."
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -30,6 +30,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer":
     [
         "<span class=\"small-text\">Для юбилейных концертов певец вместе со своими музыкантами, рок-бэндом и струнным квартетом «Magnetic Fantasy», подготовил специальную программу, которая будет основой масштабного шоу.</span>",

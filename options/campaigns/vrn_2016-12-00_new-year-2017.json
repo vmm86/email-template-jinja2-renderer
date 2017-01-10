@@ -1,0 +1,193 @@
+{
+    "renderable": false,
+    "campaign": "new-year-2017",
+    "title": "Только до 10 января – скидка 10% на bezantrakta.ru",
+    "subtitle": "Не пропустите!",
+    "logo": "top",
+    "header":
+    [
+        "Новый год уже совсем не за горами! Потому мы хотим порадовать Вас и Ваших близких) Мы считаем, что <strong>билет – это лучший подарок</strong> и приглашаем Вас принять участие в нашей праздничной акции!",
+        "<img src=\"http://bezantrakta.ru/emailing/campaigns/2016-12-00_new-year-2017.jpg\" width=\"560\" height=\"290\">",
+        "Только до 10 января!",
+        "При предъявлении открытки ⁕ bezantrakta.ru в наших кассах:<br>Театр Оперы и Балета и ТЦ «Галерея Чижова» (минус 2-й этаж)<br><strong>действует скидка 10% на следующие мероприятия</strong>:"
+    ],
+    "events_list_top":
+    [
+        {
+            "cells_number": 4,
+            "events":
+            [
+                {
+                    "type": "image",
+                    "content": "schelkunchik",
+                    "event_id": 1383,
+                    "img": 605,
+                    "alt": "2017-01-09 «ЩЕЛКУНЧИК» Воронежский Концертный Зал",
+                    "date": "9 января",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "yolka",
+                    "event_id": 1428,
+                    "img": 258,
+                    "alt": "2017-02-03 МАСТЕР И МАРГАРИТА Воронежский Концертный Зал",
+                    "date": "3 февраля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "winx",
+                    "event_id": 1504,
+                    "img": 873,
+                    "alt": "2017-03-29 «Близкие люди» Воронежский Концертный Зал",
+                    "date": "29 марта",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "winx",
+                    "event_id": 1512,
+                    "img": 879,
+                    "alt": "2017-04-19 Елена Яковлева Воронежский Концертный Зал",
+                    "date": "19 апреля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "body":
+    [
+        "⁕ При любом заказе билетов в указанных выше кассах Вы получите открытку от bezantrakta.ru.",
+        "Оплата заказа по акции производится наличными в кассах.",
+        "Билеты, приобретённые по акции, возврату и обмену не подлежат.",
+        "Также рекомендуем посетить!"
+    ],
+    "events_list_bottom":
+    [
+        {
+            "cells_number": 4,
+            "events":
+            [
+                {
+                    "type": "image",
+                    "content": "svinka-peppa",
+                    "event_id": 1270,
+                    "img": 763,
+                    "alt": "2016-12-23 СВИНКА ПЕППА «ДЕДМОРОЗНОЕ НАСТРОЕНИЕ» Воронежский Концертный Зал",
+                    "date": "23 декабря",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "volshebniy-posokh",
+                    "event_id": 1557,
+                    "img": 889,
+                    "alt": "2016-12-24 «ТАЙНА ВОЛШЕБНОГО ПОСОХА» Воронежский Цирк",
+                    "date": "24 декабря",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "winx",
+                    "event_id": 1539,
+                    "img": 880,
+                    "alt": "2017-02-06 Олег Погудин Театр Оперы и Балета",
+                    "date": "6 февраля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "orkestr-glenna-millera",
+                    "event_id": 1501,
+                    "img": 872,
+                    "alt": "2017-02-28 Оркестр Гленна Миллера Театр Оперы и Балета",
+                    "date": "28 февраля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        },
+        {
+            "cells_number": 3,
+            "events":
+            [
+                {
+                    "type": "image",
+                    "content": "mamenko",
+                    "event_id": 1496,
+                    "img": 554,
+                    "alt": "2017-03-01 Игорь Маменко Воронежский Концертный Зал",
+                    "date": "1 марта",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "volshebniy-posokh",
+                    "event_id": 1506,
+                    "img": 874,
+                    "alt": "2017-03-09 Иеромонах ФОТИЙ. «РОМАНСЫ» Воронежский Концертный Зал",
+                    "date": "9 марта",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "didylya",
+                    "event_id": 1505,
+                    "img": 617,
+                    "alt": "2017-04-04 ДиДюЛя в сопровождении камерного оркестра Воронежский Концертный Зал",
+                    "date": "4 апреля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer":
+    [
+        "Справки по телефону <a href=\"tel:84732100102\">210-01-02</a>."
+    ],
+    "social": {}
+}

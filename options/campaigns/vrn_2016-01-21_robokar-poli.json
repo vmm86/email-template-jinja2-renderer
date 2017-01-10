@@ -10,7 +10,7 @@
         "Новый интерактивный музыкальный спектакль для детей.<br>По мотивам самого популярного и любимого детьми всего мира мультфильма «<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=935&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=robokar-poli&amp;utm_content=robokar-poli_text\" target=\"_blank\">Робокар Поли</a></strong>»!",
         "Подарите своему ребёнку праздник!"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -31,6 +31,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [],
     "social": {}
 }

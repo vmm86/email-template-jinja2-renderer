@@ -5,7 +5,7 @@
     "subtitle": "Предлагаем вашему вниманию новые концерты и спектакли грядущего сезона, а билеты вы можете приобрести на сайте bezantrakta.ru",
     "logo": "top",
     "header": [],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 3,
@@ -134,6 +134,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer":
     [
         "С полной информацией о всех мероприятиях Вы можете ознакомиться на нашем сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha-may2016&amp;utm_content=afisha-may2016_text\" target=\"_blank\">bezantrakta.ru</a></strong>. Информация постоянно обновляется."

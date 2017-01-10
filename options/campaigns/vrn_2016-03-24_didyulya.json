@@ -9,7 +9,7 @@
         "<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=923&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=didyulya&amp;utm_content=didyulya_text\" target=\"_blank\">ДиДюЛя</a> в программе \"ТНЕ BEST\" представит музыкальную историю группы за 15 лет</strong>.<br>Воронежский концертный зал, 10 апреля 2016 г., начало в 19:00.",
         "Все самые яркие хиты музыканта будут представлены в одном двухчасовом концерте.<br>Качественный инструментал. Потрясающий свет. Живой звук. Удивительные мелодии."
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -30,6 +30,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer":
     [
         "<span class=\"small-text\"><strong>ДиДюЛя</strong> – композитор и лидер одноименной группы, которая играет музыку в стилевом диапазоне от нео-фламенко до рока и фолка. На концерте со сцены не звучит ни единого слова, так как язык инструментальной музыки понятен зрителям всех стран и континентов.</span>",

@@ -1,0 +1,86 @@
+{
+    "renderable": false,
+    "campaign": "hny-2017",
+    "title": "С Новым годом и Рождеством!",
+    "subtitle": "Поздравляем!",
+    "logo": "top",
+    "header":
+    [
+        "В жиз­ни мно­го счастья, толь­ко на­до не бить­ся за не­го, не добы­вать, вы­хваты­вая у дру­гих, а прос­то уви­деть, ко­то­рое твоё: оно улы­бнёт­ся нав­стре­чу.",
+        "С праздником и ещё раз с праздником!",
+        "<a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=hny-2017&amp;utm_content=hny-2017_kid-poster\" target=\"_blank\"><img src=\"http://bezantrakta.ru/emailing/campaigns/2016-12-00_hny-2017.jpg\" width=\"560\" height=\"260\"></a>",
+        "Дорогие друзья!",
+        "Напоминаем Вам, что только до 10 января при предъявлении открытки⁕ от <a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=yolka2&amp;utm_content=bezantrakta-text-top\" target=\"_blank\"><img src=\"http://bezantrakta.ru/emailing/images/bzlogo-text.jpg\" width=\"100\" height=\"20\" style=\"vertical-align: bottom;\"></a> в наших кассах:<br>Театр Оперы и Балета и ТЦ «Галерея Чижова» (минус 2-й этаж)<br><strong>действует скидка 10% на следующие мероприятия</strong>:"
+    ],
+    "events_list_top":
+    [
+        {
+            "cells_number": 4,
+            "events":
+            [
+                {
+                    "type": "image",
+                    "content": "schelkunchik",
+                    "event_id": 1383,
+                    "img": 605,
+                    "alt": "2017-01-09 «ЩЕЛКУНЧИК» Воронежский Концертный Зал",
+                    "date": "9 января",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "yolka",
+                    "event_id": 1428,
+                    "img": 258,
+                    "alt": "2017-02-03 МАСТЕР И МАРГАРИТА Воронежский Концертный Зал",
+                    "date": "3 февраля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "winx",
+                    "event_id": 1504,
+                    "img": 873,
+                    "alt": "2017-03-29 «Близкие люди» Воронежский Концертный Зал",
+                    "date": "29 марта",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                },
+                {
+                    "type": "image",
+                    "content": "winx",
+                    "event_id": 1512,
+                    "img": 879,
+                    "alt": "2017-04-19 Елена Яковлева Воронежский Концертный Зал",
+                    "date": "19 апреля",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "body":
+    [
+        "⁕ При любом заказе билетов в указанных выше кассах Вы получите открытку от <a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=yolka2&amp;utm_content=bezantrakta-text-bottom\" target=\"_blank\"><img src=\"http://bezantrakta.ru/emailing/images/bzlogo-text.jpg\" width=\"100\" height=\"20\" style=\"vertical-align: bottom;\"></a>.",
+        "Оплата заказа по акции производится наличными в кассах.",
+        "Билеты, приобретённые по акции, возврату и обмену не подлежат.",
+        "Справки по телефону <a href=\"tel:84732100102\">210-01-02</a>."
+    ],
+    "events_list_bottom": [],
+    "footer": [],
+    "social": {}
+}

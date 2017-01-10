@@ -8,7 +8,7 @@
     [
         "Купить, забронировать, оплатить билеты онлайн Вы можете в наших кассах:<br>на сайте <strong><a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=afisha2016-04&amp;utm_content=afisha2016-04_text\" target=\"_blank\">bezantrakta.ru</a></strong> или по телефону <strong><a href=\"tel:74732100102\" target=\"_blank\" style=\"display: inline-block;\">+7 (473) 210-01-02</a></strong>."
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 3,
@@ -53,6 +53,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [],
     "social": {}
 }

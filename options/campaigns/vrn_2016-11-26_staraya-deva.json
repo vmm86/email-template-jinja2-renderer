@@ -8,7 +8,7 @@
     [
         "{$name}, будем рады видеть Вас на спектакле \"Старая дева\"!"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 2,
@@ -42,6 +42,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer":
     [
         "Режиссер: Б. Мильграм.",

@@ -17,7 +17,7 @@
         "Возрастное ограничение 12+.",
         "Справки по тел. 210-01-02."
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -38,6 +38,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [],
     "social":
     {

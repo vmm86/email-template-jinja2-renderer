@@ -8,7 +8,7 @@
     [
         "Спасибо Вам, что были вместе с нами в этом году!"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -29,6 +29,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [],
     "social": {}
 }

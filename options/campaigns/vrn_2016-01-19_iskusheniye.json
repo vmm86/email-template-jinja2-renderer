@@ -10,7 +10,7 @@
         "<strong>Специально для Вас!</strong><br><span class=\"header\" style=\"margin: 0;\">КУПИ 2 БИЛЕТА и ПОЛУЧИ ТРЕТИЙ В ПОДАРОК!</span>",
         "<strong><a href=\"http://bezantrakta.ru/index.php?option=com_afisha&amp;view=event&amp;id=619&amp;utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=iskusheniye&amp;utm_content=iskusheniye_text\" target=\"_blank\">Шоу под дождём «Искушение»</a> <br> 9 февраля 2016 года, 19:00, Воронежский концертный зал</strong>"
     ],
-    "events_list": 
+    "events_list_top": 
     [
         {
             "cells_number": 1,
@@ -31,6 +31,8 @@
             ]
         }
     ],
+    "body": [],
+    "events_list_bottom": [],
     "footer": [
         "<p class=\"header\">УСЛОВИЯ ПРОВЕДЕНИЯ АКЦИИ:</p>",
         "<ol class=\"small-text\"><li>Количество билетов ограничено!!!</li><li>Телефон для справок: <a href=\"tel:74732100102\" target=\"_blank\">+7 (473) 210-01-02</a>. <span style=\"display: inline-block;\">Акция действует в кассах <a href=\"http://bezantrakta.ru/?utm_source=bezantrakta&amp;utm_medium=email&amp;utm_campaign=iskusheniye&amp;utm_content=bezantrakta_text\" target=\"_blank\">bezantrakta.ru</a> до 18 часов 30 минут 25 января 2016 года.</span></li><li>Распечатай полученное письмо, предъяви его в кассе, купи два билета <span style=\"display: inline-block;\">и получи приглашение на третье лицо в подарок</span>.</li><li>Номинал стоимости подарка равен номиналу купленных билетов.</li><li>Один адресат может воспользоваться условиями акции только один раз.</li><li>Билеты, купленные по акции, обмену или возврату не подлежат.</li></ol>"
