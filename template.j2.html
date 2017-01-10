@@ -22,8 +22,6 @@
     {% if logo == "top" %}
         {% from "macros/logo.j2.html" import logo_macro with context %}
         {{ logo_macro(source, source_link, source_logo, source_logo_alt, campaign) }}
-    {% else %}
-        <p></p>
     {% endif %}
 
     {% if header %}
@@ -31,8 +29,8 @@
         {{ text_block_macro(header) }}
     {% endif %}
 
-    {% if events_list_1 %}
-        {% for events_row in events_list_1 %}
+    {% if events_list_top %}
+        {% for events_row in events_list_top %}
             {% from "macros/events_list.j2.html" import events_list_macro with context %}
             {{ events_list_macro(events_row) }}
         {% endfor %}
@@ -43,8 +41,8 @@
         {{ text_block_macro(body) }}
     {% endif %}
 
-    {% if events_list_2 %}
-        {% for events_row in events_list_2 %}
+    {% if events_list_bottom %}
+        {% for events_row in events_list_bottom %}
             {% from "macros/events_list.j2.html" import events_list_macro with context %}
             {{ events_list_macro(events_row) }}
         {% endfor %}

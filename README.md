@@ -52,7 +52,7 @@ They help to clearly identify clicks on each link and further commercial convers
         "Уже в продаже лучшие билеты нового концертного сезона!"
     ],
     // A list of rows that contain text description or some clikable events' posters
-    "events_list":
+    "events_list_top":
     [
         // Every child dictionary is one row in a table holding one or many posters of events
         {
@@ -118,6 +118,10 @@ They help to clearly identify clicks on each link and further commercial convers
             ]
         }
     ],
+    // Email body (may be an empty list)
+    "body" [],
+    // Same as `events_list_top`
+    "events_list_bottom": [],
     // Email footer (may be an empty list)
     "footer":
     [
