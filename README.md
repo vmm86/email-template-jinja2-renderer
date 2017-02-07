@@ -2,16 +2,16 @@
 
 Python Jinja2 templater to create multiple HTML files for email templates.
 
-# Requirements
+# Requirements (for Python 3.5)
 
 ```python
-cssselect==0.9.2
+cssselect==1.0.1
 cssutils==1.0.1
-Jinja2==2.8
-lxml==3.6.0
+Jinja2==2.9.5
+lxml==3.7.2
 MarkupSafe==0.23
-premailer==3.0.0
-requests==2.10.0
+premailer==3.0.1
+requests==2.13.0
 ```
 
 # Usage
