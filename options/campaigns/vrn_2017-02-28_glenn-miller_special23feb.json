@@ -1,0 +1,38 @@
+{
+    "renderable": false,
+    "campaign": "2017-02-28_glenn-miller_special23feb",
+    "title": "Билеты к 23 февраля!",
+    "subtitle": "Билеты на bezantrakta.ru!",
+    "logo": "top",
+    "header":
+    [
+        "23 билета на оркестр Гленна Миллера по СПЕЦИАЛЬНОЙ ЦЕНЕ!!!",
+        "Только к 23 февраля в кассе Театра оперы и балета!",
+        "Справки по телефону (473) 210-01-02."
+    ],
+    "events_list_top": 
+    [
+        {
+            "cells_number": 1,
+            "events" :
+            [
+                {
+                    "type": "image",
+                    "content": "2017-02-28_glenn-miller_special23feb",
+                    "event_id": 1501,
+                    "img": "2017-02-28_glenn-miller_special23feb.jpg",
+                    "alt": "2017-02-28 Оркестр Гленна Миллера Театр Оперы и Балета",
+                    "button":
+                    {
+                        "type": "buy",
+                        "position": "bottom"
+                    }
+                }
+            ]
+        }
+    ],
+    "body": [],
+    "events_list_bottom": [],
+    "footer": [],
+    "social": {}
+}
